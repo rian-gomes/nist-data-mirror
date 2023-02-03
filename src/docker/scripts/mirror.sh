@@ -21,3 +21,6 @@ do
     cp -f "/tmp/nvd/$f" "/usr/local/apache2/htdocs/$f"
   fi
 done
+
+wget -O /usr/local/apache2/htdocs/retire_js.json https://raw.githubusercontent.com/Retirejs/retire.js/master/repository/jsrepository.json
+wget -O /usr/local/apache2/htdocs/cisa.json https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
